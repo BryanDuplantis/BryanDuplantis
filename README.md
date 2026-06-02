@@ -8,9 +8,9 @@ Most of what I build lives in private repos — personal infrastructure I run da
 
 ## What I'm building
 
-**brain-mcp** — A TypeScript MCP server running on a Raspberry Pi at home. Makes my accumulated notes, decisions, and session history queryable by Claude from any surface: iOS app, claude.ai, Claude Code in Ghostty. I take credit for the idea; Claude takes the rest. The Pi also runs scheduled jobs on cron and pings me on Discord when something breaks. Everything else is built on top of it.
+**[brain-mcp](https://github.com/BryanDuplantis/brain-mcp)** — A TypeScript MCP server running on a Raspberry Pi at home. Makes my accumulated notes, decisions, and session history queryable by Claude from any surface: iOS app, claude.ai, Claude Code in Ghostty. I take credit for the idea; Claude takes the rest. The Pi also runs scheduled jobs on cron and pings me on Discord when something breaks. Everything else is built on top of it.
 
-**Concert Bloodhound** — Another MCP server, in TypeScript. I couldn't find one place that listed everything from arena tours down to a kid's oboe recital in Marietta, so I built it. Pulls live listings from Ticketmaster, JamBase, and civic event feeds in parallel — all in one place, no repeats, no made-up prices or fake availability.
+**[Concert Bloodhound](https://github.com/BryanDuplantis/concert-bloodhound)** — Another MCP server, in TypeScript. I couldn't find one place that listed everything from arena tours down to a kid's oboe recital in Marietta, so I built it. Pulls live listings from Ticketmaster, JamBase, and civic event feeds in parallel — all in one place, no repeats, no made-up prices or fake availability.
 
 **Fog of War Room** — A daily intelligence briefing pipeline covering the US–Iran war. Pulls from a deep source pile, runs synthesis and confidence-flagging, renders to Markdown, and publishes to Substack. Analyst-grade discipline on the output; agentic pipeline on the build. [Read it here.](https://bryanduplantis.substack.com)
 
