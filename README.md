@@ -46,3 +46,4 @@ In March 2015 I changed lanes — Nashville Software School, Cohort 9 — and bu
 ---
 
 *And before you ask: yes, Claude thinks this is a great profile. Claude thinks everything I do is a great idea. We're working on it.*
+
