@@ -12,7 +12,7 @@ Most of what I build lives in private repos — personal infrastructure I run da
 
 **[Concert Bloodhound](https://github.com/BryanDuplantis/concert-bloodhound)** — Another MCP server, in TypeScript. I couldn't find one place that listed everything from arena tours down to a kid's oboe recital in Marietta, so I built it. Pulls live listings from Ticketmaster, JamBase, and civic event feeds in parallel — all in one place, no repeats, no made-up prices or fake availability.
 
-**Fog of War Room** — A daily intelligence briefing pipeline covering the US–Iran war. Pulls from a deep source pile, runs synthesis and confidence-flagging, renders to Markdown, and publishes to Substack. Analyst-grade discipline on the output; agentic pipeline on the build. [Read it here.](https://bryanduplantis.substack.com)
+**Fog of War Room** — A daily intelligence briefing pipeline covering the US–Iran war. Pulls from 170-plus sources, runs synthesis and confidence-flagging, renders to Markdown, and publishes to Substack. Analyst-grade discipline on the output; agentic pipeline on the build. [Read it here.](https://bryanduplantis.substack.com)
 
 **Movie watchlist semantic search** — I dumped nearly 300 films into it and Claude built a semantic search layer on top. I can search "that one where the toys think they're getting thrown out again" and actually land on Toy Story 5. That's the whole point.
 
