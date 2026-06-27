@@ -8,21 +8,29 @@ Most of what I build lives in private repos — personal infrastructure I run da
 
 ## What I'm building
 
-**[brain-mcp](https://github.com/BryanDuplantis/brain-mcp)** — A TypeScript MCP server running on a Raspberry Pi at home. Makes my accumulated notes, decisions, and session history queryable by Claude from any surface: iOS app, claude.ai, Claude Code in Ghostty. I take credit for the idea; Claude takes the rest. The Pi also runs scheduled jobs on cron and pings me on Discord when something breaks. Everything else is built on top of it.
+### [brain-mcp](https://github.com/BryanDuplantis/brain-mcp)
+A TypeScript MCP server running on a Raspberry Pi at home. Makes my accumulated notes, decisions, and session history queryable by Claude from any surface: iOS app, claude.ai, Claude Code in Ghostty. I take credit for the idea; Claude takes the rest. The Pi also runs scheduled jobs on cron and pings me on Discord when something breaks. Everything else is built on top of it.
 
-**Capture Engine** — The piece I touch most after brain-mcp. I throw a note at it, typed or spoken, and Sonnet works out what it is — a task, an event, a stray idea — and routes it: into the Pi's database, a Discord ping, or onto my calendar. Capture first, file later. Or never.
+### Capture Engine
+The piece I touch most after brain-mcp. I throw a note at it, typed or spoken, and Sonnet works out what it is — a task, an event, a stray idea — and routes it: into the Pi's database, a Discord ping, or onto my calendar. Capture first, file later. Or never.
 
-**[Concert Bloodhound](https://github.com/BryanDuplantis/concert-bloodhound)** — Another MCP server, in TypeScript. I couldn't find one place that listed everything from arena tours down to a kid's oboe recital in Marietta, so I built it. Pulls live listings from Ticketmaster, JamBase, and civic event feeds in parallel — all in one place, no repeats, no made-up prices or fake availability.
+### [Concert Bloodhound](https://github.com/BryanDuplantis/concert-bloodhound)
+Another MCP server, in TypeScript. I couldn't find one place that listed everything from arena tours down to a kid's oboe recital in Marietta, so I built it. Pulls live listings from Ticketmaster, JamBase, and civic event feeds in parallel — all in one place, no repeats, no made-up prices or fake availability.
 
-**Fog of War Room** — A daily intelligence briefing pipeline covering the US–Iran war. Pulls from 170-plus sources, runs synthesis and confidence-flagging, renders to Markdown, and publishes to Substack. Analyst-grade discipline on the output; agentic pipeline on the build. [Read it here.](https://bryanduplantis.substack.com)
+### Fog of War Room
+A daily intelligence briefing pipeline covering the US–Iran war. Pulls from 170-plus sources, runs synthesis and confidence-flagging, renders to Markdown, and publishes to Substack. Analyst-grade discipline on the output; agentic pipeline on the build. [Read it here.](https://bryanduplantis.substack.com)
 
-**Movie watchlist semantic search** — I dumped nearly 300 films into it and Claude built a semantic search layer on top. I can search "that one where the toys think they're getting thrown out again" and actually land on Toy Story 5. That's the whole point.
+### Movie watchlist semantic search
+I dumped nearly 300 films into it and Claude built a semantic search layer on top. I can search "that one where the toys think they're getting thrown out again" and actually land on Toy Story 5. That's the whole point.
 
-**Jukebox Hero** — A catalog of my CD collection built to surface the connections between records: shared session players, a producer who turns up two decades apart, one album arguing with another. I feed Claude the stack; it does the digging and draws the lines.
+### Jukebox Hero
+A catalog of my CD collection where every disc gets a real dossier: who played on it, when it was cut, what it was up against. Built for the dossiers — but the way we set it up, it starts drawing lines between records too: a session player who turns up across the stack, a producer two decades apart.
 
-**Surplus Rescue** — Early MVP. Coordinates bulk food pickups: drivers, donors, destinations, timing. The one I most want to turn into something real.
+### Surplus Rescue
+Early MVP. Coordinates bulk food pickups: drivers, donors, destinations, timing. The one I most want to turn into something real.
 
-**Apex Squad** — Not code. A children's book I've been sketching — apex predators who, instead of competing, get along, each in their own way. Claude helped with the character sketches and bios. Underneath it runs a quieter thread: how to be present with what ends, and how to begin again.
+### Apex Squad
+Not code. A children's book I've been sketching — apex predators who, instead of competing, get along, each in their own way. Claude helped with the character sketches and bios. Underneath it runs a quieter thread: how to be present with what ends, and how to begin again.
 
 ---
 
@@ -50,4 +58,3 @@ In March 2015 I changed lanes — Nashville Software School, Cohort 9 — and bu
 ---
 
 *And before you ask: yes, Claude thinks this is a great profile. Claude thinks everything I do is a great idea. We're working on it.*
-
