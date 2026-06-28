@@ -4,21 +4,23 @@ I direct the agents; Claude writes the code.
 
 Most of what I build lives in private repos — personal infrastructure I run daily, not portfolio pieces. The contribution graph is the real signal. Here's what's actually running.
 
+It all runs on a Raspberry Pi in my house. brain-mcp, the capture pipeline, the scheduled jobs, the Discord alerting that pings me when something breaks — one ARM board pulling a few watts, running while I sleep. The Mac's just where I sit down to drive.
+
 ---
 
 ## What I'm building
 
 ### [brain-mcp](https://github.com/BryanDuplantis/brain-mcp)
-A TypeScript MCP server running on a Raspberry Pi at home. Makes my accumulated notes, decisions, and session history queryable by Claude from any surface: iOS app, claude.ai, Claude Code in Ghostty. I take credit for the idea; Claude takes the rest. The Pi also runs scheduled jobs on cron and pings me on Discord when something breaks. Everything else is built on top of it.
+A TypeScript MCP server, and the spine of everything. Notes, decisions, and session history land in a ChromaDB vector store with Voyage AI embeddings; Claude queries it semantically from any surface — iOS, claude.ai, Claude Code in Ghostty — reaching the Pi over Tailscale. I take credit for the idea; Claude takes the rest. Everything else is built on top of it.
 
 ### Capture Engine
-The piece I touch most after brain-mcp. I throw a note at it, typed or spoken, and Sonnet works out what it is — a task, an event, a stray idea — and routes it: into the Pi's database, a Discord ping, or onto my calendar. Capture first, file later. Or never.
+Capture first, sort it out by machine. I throw a note at it, typed or spoken; Sonnet triages what it is — task, event, stray idea — writes it to a SQLite database on the Pi as the source of truth, then fans out: a Discord ping, a morning digest, an event on my Google Calendar. The piece I touch most after brain-mcp.
 
 ### [Concert Bloodhound](https://github.com/BryanDuplantis/concert-bloodhound)
-Another MCP server, in TypeScript. I couldn't find one place that listed everything from arena tours down to a kid's oboe recital in Marietta, so I built it. Pulls live listings from Ticketmaster, JamBase, and civic event feeds in parallel — all in one place, no repeats, no made-up prices or fake availability.
+Another TypeScript MCP server. Fetches Ticketmaster, JamBase, and civic event feeds in parallel, dedups by artist and date, returns one clean Zod-typed list — arena tours down to a kid's oboe recital in Marietta. No repeats, no made-up prices, no fake availability.
 
 ### Fog of War Room
-A daily intelligence briefing pipeline covering the US–Iran war. Pulls from 170-plus sources, runs synthesis and confidence-flagging, renders to Markdown, and publishes to Substack. Analyst-grade discipline on the output; agentic pipeline on the build. [Read it here.](https://bryanduplantis.substack.com)
+A daily intelligence-briefing pipeline on the US–Iran war. A chain of subagents — orient, research, draft, finalize — hands off through brain-mcp captures so raw research never clogs the writing context; pulls 170-plus sources, flags confidence, renders to Markdown, and publishes to Substack behind a Cloudflare Access gate. Analyst discipline on the output; agentic pipeline on the build. [Read it here.](https://bryanduplantis.substack.com)
 
 ### Movie watchlist semantic search
 I dumped nearly 300 films into it and Claude built a semantic search layer on top. I can search "that one where the toys think they're getting thrown out again" and actually land on Toy Story 5. That's the whole point.
