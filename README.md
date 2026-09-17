@@ -2,7 +2,7 @@
 
 I direct the agents. Claude writes the code.
 
-Most of what I build lives in private repos, because it's infrastructure I actually run rather than portfolio work. It all sits on a Raspberry Pi in my house: 16 services, 15 cron jobs, and the Discord alerts that tell me when one of them broke. The Mac is just where I sit down to drive.
+Most of what I build lives in private repos, because it's infrastructure I actually run rather than portfolio work. It all sits on a Raspberry Pi in my house: 16 services, 15 cron jobs, and the Discord alerts that tell me when one of them broke. The Mac is just where I sit down to drive, and watch YouTube!
 
 Atlanta, GA. [LinkedIn](https://linkedin.com/in/bryanduplantis) · [duplantis@gmail.com](mailto:duplantis@gmail.com)
 
