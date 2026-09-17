@@ -2,7 +2,7 @@
 
 I direct the agents. Claude writes the code.
 
-Most of what I build lives in private repos, because it's infrastructure I actually run rather than portfolio work. It all sits on a Raspberry Pi in my house: 16 services, 15 cron jobs, and the Discord alerts that tell me when one of them broke. The Mac is just where I sit down to drive, and watch YouTube!
+Most of what I build lives in private repos, because it's infrastructure I actually run rather than portfolio work. It all sits on a Raspberry Pi in my house: 16 services, 15 cron jobs, and the Discord alerts that tell me when one of them broke. The Mac is just where I sit down to drive.
 
 Atlanta, GA. [LinkedIn](https://linkedin.com/in/bryanduplantis) · [duplantis@gmail.com](mailto:duplantis@gmail.com)
 
@@ -20,7 +20,7 @@ It's deliberately not an installer. Claude Code's own setup takes ten minutes an
 
 [**Concert Bloodhound**](https://github.com/BryanDuplantis/concert-bloodhound) is another MCP server, public this time. Nothing out there listed everything from arena tours down to a kid's oboe recital in Marietta, so this pulls Ticketmaster, JamBase, and civic feeds at once, drops the duplicates, and hands back one typed list. No repeats, no invented prices.
 
-**Fog of War Room** is a daily brief on the US and Iran war, Day 191 and counting. It runs as a chain of subagents (orient, research, draft, publish) that hand off through brain-mcp instead of one long conversation, so the raw research never crowds out the writing. Renders to HTML, publishes behind a Cloudflare Access gate.
+**Fog of War Room** is a day-by-day brief on the US and Iran war, 191 days of it, written from my own outlines and source pile. The part worth talking about is the build: a chain of subagents (orient, research, draft, publish) that hand off through brain-mcp instead of one long conversation, so the raw research never crowds out the writing. Renders to HTML and publishes behind a Cloudflare Access gate.
 
 **Underneath all of it** sit 53 skills and 15 scoped subagents in my Claude Code config, which is where most of this year's work actually went. A subagent's tool list is its security boundary, not a paragraph of instructions, so the agents that read the open web hold no shell and can't write anywhere.
 
